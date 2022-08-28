@@ -1,0 +1,172 @@
+/* Universal CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Universal CSS End */
+/* Main Div CSS Start */
+.max-width{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Main Div CSS End */
+/* Logo CSS Start */
+.logo{
+    background:#bdc3c7;
+}
+.logo img{
+    width: 8%;
+}
+/* Logo CSS End */
+/* Header CSS Start */
+header{
+    background: #3498db;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+nav ul li a {
+    color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    border-right: 1px solid #fff;
+}
+nav ul li:first-child a{
+    border-left: 1px solid #fff;
+}
+nav ul li:hover > a{
+    background: #2980b9;
+}
+/* DropDown CSS Start */
+nav ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3498db;
+    width:300px;
+    padding:0;
+    border-top: 1px solid #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+nav ul li ul li {
+    display: block;
+    margin-left: 0px!important;
+}
+nav ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+nav ul ul li:first-child a{
+    border-left:none;
+}
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* DropDown CSS End */
+/* Header CSS End */
+/* Banner CSS Start */
+.banner{
+    background-image:url("https://www.smithvanture.com/wp-content/uploads/2017/06/bg-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 250px;
+}
+.banner h4 {
+    margin-top: -195px;
+    color: #000;
+    font-family: 'Dosis', sans-serif;
+}
+.banner h1 {
+    margin: 45px 0;
+    font-family: 'DynaPuff', cursive;
+}
+.banner p {
+    width: 626px;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+.banner a {
+    text-decoration: 0;
+    display: inline-block;
+    background: #8cc536;
+    color: #000;
+    padding: 16px 29px;
+    margin: 100px 10px;
+    font-size: 20px;
+    border-radius:15px;
+    font-weight: 600;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner a:hover {
+    color: #fff;
+}
+.banner a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #2980b9;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner a:hover::after{
+    width: 100%;
+   
+}
+/* Banner CSS End */
+/* Footer CSS Start */
+footer ul{
+    list-style: none;
+    text-align: center;
+    background: #8cc536;
+    padding: 20px;
+    margin: -4px 0;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li a{
+    display: inline-block;
+    color: #8cc536 !important;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+footer ul li a span{
+    font-size: 20px;
+}
+footer ul li a:hover{
+    color: #fff !important;
+    background: #8cc536;
+}
+/* Footer CSS End */
+
